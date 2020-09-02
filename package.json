@@ -11,7 +11,9 @@
     "react-dom": "^16.13.1",
     "react-google-maps": "^9.4.5",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "react-use": "^15.3.3",
+    "use-window-scroll-hook": "^1.0.21"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,6 +37,7 @@
     ]
   },
   "devDependencies": {
+    "@iconify/icons-bi": "^1.0.6",
     "@iconify/icons-clarity": "^1.0.0",
     "@iconify/react": "^1.1.3"
   }

@@ -54,4 +54,13 @@
     font-weight: bold;
     margin-top: 80px;
   }
+  &_arrowIcon {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    color: #ff779a;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 100;
+  }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import phoneHandsetSolid from "@iconify/icons-clarity/phone-handset-solid";
+import Scroll from "./Scroll";
 import Map from "./Map";
 
 function Main() {
@@ -31,6 +32,7 @@ function Main() {
           +48 123 456 789
         </p>
         <Map />
+        <Scroll />
       </div>
     </div>
   );
