@@ -1,30 +1,27 @@
-import React, { useState, useEffect } from "react";
+import React, {useState} from "react";
+
 import Header from "./components/Header";
-import Main from "./components/Main";
 import Footer from "./components/Footer";
-import Shop from "./components/Shop";
+import Routes from "./routing/routes";
+import Cart from "./components/Cart";
+
 import "./App.scss";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState("");
 
-  useEffect(() => {
-    console.log("refresh");
-  }, []);
+  const handleStateChange = (e) => {
+    setCart(e.target.value);
+  }
 
   return (
-    <Router>
       <div className="app">
+        <input onChange={handleStateChange}></input>
         <Header />
-        <Switch>
-          <Route path="/" exact component={Main} />
-          <Route path={`/shop/:id`} exact component={Shop} />
-        </Switch>
-
+        <Routes />
         <Footer />
+        <Cart isVisible={cart} setVisibility={setCart} />
       </div>
-    </Router>
   );
 }
 

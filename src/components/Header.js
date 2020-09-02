@@ -2,10 +2,10 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import phoneHandsetLine from "@iconify/icons-clarity/phone-handset-line";
 import emailLine from "@iconify/icons-clarity/email-line";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import data from "../data.json";
 
-function Header() {
+const Header = () => {
   // const sections = [
   //   { product: "sukienki", id: "dresses" },
   //   { product: "spudnice", id: "skirts" },
@@ -26,9 +26,9 @@ function Header() {
 
   const links = data.map((link) => (
     <li className="navbar_button" key={link.section}>
-      <Link className="button_link" exact to={link.link}>
+      <a className="button_link" href={link.link}>
         {link.sectionPL}
-      </Link>
+      </a>
     </li>
   ));
 
