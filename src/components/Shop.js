@@ -9,7 +9,7 @@ function Shop({ match }) {
     const filterItems = Data.find((section) => section.section === sectionName);
     setItems(filterItems);
     console.log(items.products);
-  }, [match, sectionName, items]);
+  }, [match.params.id, sectionName, items]);
 
   const clothes =
     items.length > 0

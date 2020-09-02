@@ -1,6 +1,7 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import phoneHandsetSolid from "@iconify/icons-clarity/phone-handset-solid";
+import Map from "./Map";
 
 function Main() {
   return (
@@ -29,6 +30,7 @@ function Main() {
           />{" "}
           +48 123 456 789
         </p>
+        <Map />
       </div>
     </div>
   );
