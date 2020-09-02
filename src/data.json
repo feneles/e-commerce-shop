@@ -1,0 +1,198 @@
+[
+  {
+    "sectionPL": "strona główna",
+    "section": "",
+    "link": "/"
+  },
+  {
+    "sectionPL": "sukienki",
+    "section": "dresses",
+    "link": "/shop/dresses",
+    "products": [
+      {
+        "description": "Elegancka kiecka",
+        "img": "/img/clothes/dresses 1.jpg",
+        "price": 69,
+        "selected": false
+      },
+      {
+        "description": "Biały t-shirt basic",
+        "img": "/img/clothes/dresses 2.jpg",
+        "price": 59,
+        "selected": false
+      },
+      {
+        "description": "Czerwony t-shirt basic",
+        "img": "/img/clothes/dresses 3.jpg",
+        "price": 59,
+        "selected": false
+      },
+      {
+        "description": "Różowy t-shirt basic",
+        "img": "/img/clothes/dresses 4.jpg",
+        "price": 59,
+        "selected": false
+      },
+      {
+        "description": "Żółty t-shirt basic",
+        "img": "/img/clothes/dresses 5.jpg",
+        "price": 59,
+        "selected": false
+      },
+      {
+        "description": "Elegancka kiecka 2",
+        "img": "/img/clothes/dresses 6.jpg",
+        "price": 69,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "sectionPL": "spudnice",
+    "section": "skirts",
+    "link": "/shop/skirts",
+    "products": [
+      {
+        "description": "Biała bluzka kaktus",
+        "img": "",
+        "price": 79,
+        "selected": false
+      },
+      {
+        "description": "Kraciasta koszula autumn",
+        "img": "",
+        "price": 79,
+        "selected": false
+      },
+      {
+        "description": "Biała koszula w paski",
+        "img": "",
+        "price": 79,
+        "selected": false
+      },
+      {
+        "description": "Bordowa bluzka z wiązaniem",
+        "img": "",
+        "price": 79,
+        "selected": false
+      },
+      {
+        "description": "Biała bluzka oversize",
+        "img": "",
+        "price": 79,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "sectionPL": "bluzki",
+    "section": "shirts",
+    "link": "/shop/shirts",
+    "products": [
+      {
+        "description": "Biała bluzka kaktus",
+        "img": "",
+        "price": 79,
+        "selected": false
+      },
+      {
+        "description": "Kraciasta koszula autumn",
+        "img": "",
+        "price": 79,
+        "selected": false
+      },
+      {
+        "description": "Biała koszula w paski",
+        "img": "",
+        "price": 79,
+        "selected": false
+      },
+      {
+        "description": "Bordowa bluzka z wiązaniem",
+        "img": "",
+        "price": 79,
+        "selected": false
+      },
+      {
+        "description": "Biała bluzka oversize",
+        "img": "",
+        "price": 79,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "sectionPL": "spodnie",
+    "section": "pants",
+    "link": "/shop/pants",
+    "products": [
+      {
+        "description": "Biała bluzka kaktus",
+        "img": "",
+        "price": 79,
+        "selected": false
+      },
+      {
+        "description": "Kraciasta koszula autumn",
+        "img": "",
+        "price": 79,
+        "selected": false
+      },
+      {
+        "description": "Biała koszula w paski",
+        "img": "",
+        "price": 79,
+        "selected": false
+      },
+      {
+        "description": "Bordowa bluzka z wiązaniem",
+        "img": "",
+        "price": 79,
+        "selected": false
+      },
+      {
+        "description": "Biała bluzka oversize",
+        "img": "",
+        "price": 79,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "sectionPL": "torebki",
+    "section": "handbags",
+    "link": "/shop/handbags",
+    "products": [
+      {
+        "description": "Biała bluzka kaktus",
+        "img": "",
+        "price": 79,
+        "selected": false
+      },
+      {
+        "description": "Kraciasta koszula autumn",
+        "img": "",
+        "price": 79,
+        "selected": false
+      },
+      {
+        "description": "Biała koszula w paski",
+        "img": "",
+        "price": 79,
+        "selected": false
+      },
+      {
+        "description": "Bordowa bluzka z wiązaniem",
+        "img": "",
+        "price": 79,
+        "selected": false
+      },
+      {
+        "description": "Biała bluzka oversize",
+        "img": "",
+        "price": 79,
+        "selected": false
+      }
+    ]
+  }
+]
