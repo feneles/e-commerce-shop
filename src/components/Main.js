@@ -3,11 +3,12 @@ import { Icon } from "@iconify/react";
 import phoneHandsetSolid from "@iconify/icons-clarity/phone-handset-solid";
 import Scroll from "./Scroll";
 import Map from "./Map";
+import emailLine from "@iconify/icons-clarity/email-line";
 
 function Main() {
   return (
     <div className="main">
-      <div className="main_slidebar">
+      <div className="main_slidebar img-fluid">
         <img src="/img/banner.png" alt="banner" />
       </div>
       <div className="main_midContent">
@@ -30,6 +31,14 @@ function Main() {
             style={{ color: "#fff", fontSize: "30px" }}
           />{" "}
           +48 123 456 789
+        </p>
+        <p className="main_email">
+          <Icon
+            className="main_emailIcon"
+            icon={emailLine}
+            style={{ color: "#fff", fontSize: "25px" }}
+          />{" "}
+          sklep@hannasfashion.pl
         </p>
         <Map />
         <Scroll />

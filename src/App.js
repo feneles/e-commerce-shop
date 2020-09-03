@@ -1,27 +1,19 @@
-import React, {useState} from "react";
-
+import React, { useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Routes from "./routing/routes";
-import Cart from "./components/Cart";
 
 import "./App.scss";
 
 function App() {
-  const [cart, setCart] = useState("");
-
-  const handleStateChange = (e) => {
-    setCart(e.target.value);
-  }
+  const [cart, setCart] = useState([]);
 
   return (
-      <div className="app">
-        <input onChange={handleStateChange}></input>
-        <Header />
-        <Routes />
-        <Footer />
-        <Cart isVisible={cart} setVisibility={setCart} />
-      </div>
+    <div className="app">
+      <Header />
+      <Routes cart={cart} setCart={setCart} />
+      <Footer />
+    </div>
   );
 }
 

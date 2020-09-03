@@ -1,11 +1,7 @@
 .cart {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    top: 0;
-    right: 0;
-    background: white;
-    width: 25%;
-    height: 100%;
-    border-left: solid black 1px;
+  height: 70vh;
+  &_empty {
+    text-align: center;
+    margin-top: 35px;
+  }
 }

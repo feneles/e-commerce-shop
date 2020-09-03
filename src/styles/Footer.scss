@@ -1,7 +1,7 @@
 .footer {
   background-color: #141414;
   text-align: center;
-  height: 20vh;
+  height: 25vh;
   color: white;
 
   &_logo {
@@ -10,9 +10,24 @@
 
   &_address {
     font-size: 20px;
-    transform: translateY(-250%);
+    transform: translateY(-220%);
   }
   &_copyrights {
+    display: block;
     font-size: 12px;
+  }
+  &_icons {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-100%);
+  }
+  &_instaIcon {
+    margin-left: 25px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &_fbIcon:hover {
+    cursor: pointer;
   }
 }
