@@ -1,13 +1,14 @@
 import React from "react";
 import data from "../data.json";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const links = data.map((link) => (
     <li className="navbar_button" key={link.section}>
-      <a className="button_link" href={link.link}>
-        {link.sectionPL}
-      </a>
+      <Link className="button_link" to={link.link}>
+        {link.section}
+      </Link>
     </li>
   ));
 
@@ -18,9 +19,9 @@ const Header = () => {
       </div>
 
       <ul className="navbar">{links}</ul>
-      <a href="/cart" className="header_cartIcon">
+      <Link to="/cart" className="header_cartIcon">
         <ShoppingCartIcon fontSize="large" />
-      </a>
+      </Link>
     </header>
   );
 };

@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import data from "../data.json";
 import Button from "@material-ui/core/Button";
 
-function Shop({ match }) {
+function Shop(props) {
   const [products, setProducts] = useState([]);
-  const [sectionName, setSectionName] = useState(match.params.id);
+  const [sectionName, setSectionName] = useState(props.match.params.id);
 
   useEffect(() => {
     const sectionSpecificFilteredData = data.find(
@@ -12,10 +12,25 @@ function Shop({ match }) {
     );
     const { products } = sectionSpecificFilteredData;
     setProducts(products);
-  }, []);
+  }, [sectionName]);
 
-  const handleButton = (e) => {
-    e.preventDefault();
+  useEffect(() => {
+    setSectionName(props.match.params.id);
+  }, [props.match.params.id]);
+
+  const handleButton = (product) => {
+    const cartItems = props.cart.slice();
+    let alreadyInCart = false;
+    cartItems.forEach((item) => {
+      if (item.id === product.id) {
+        item.count++;
+        alreadyInCart = true;
+      }
+    });
+    if (!alreadyInCart) {
+      cartItems.push({ ...product, count: 1 });
+    }
+    props.setCart(cartItems);
   };
 
   const ProductDetails = ({ product }) => {
@@ -29,14 +44,15 @@ function Shop({ match }) {
           />
           <p className="product_description">{product.description}</p>
           <div className="product_bottom">
-            <p className="product_price">{`${product.price} zł`}</p>
+            <p className="product_price">{`${product.price} $`}</p>
             <Button
+              type="button"
               className="product_button"
               variant="contained"
               color="secondary"
-              onClick={handleButton}
+              onClick={() => handleButton(product)}
             >
-              Kup Teraz
+              Add To Cart
             </Button>
           </div>
         </div>

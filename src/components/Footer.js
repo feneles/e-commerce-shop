@@ -11,7 +11,7 @@ function Footer() {
         <img src="/img/logo_footer.png" alt="footer logo" />
       </div>
       <p className="footer_address">
-        Krakowskie Przedmieście 48/50, 00-071 Warszawa
+        10 Wardour St, London W1D 6BZ, United Kingdom
       </p>
       <div className="footer_icons">
         <Icon

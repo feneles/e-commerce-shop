@@ -1,13 +1,77 @@
 import React from "react";
+import { Icon } from "@iconify/react";
+import letterX from "@iconify/icons-emojione-monotone/letter-x";
+import { useState } from "react";
 
 function Cart({ cart, setCart }) {
-  console.log(cart);
+  const [showPopup, setShowPopup] = useState(false);
+
+  const deleteItem = (product) => {
+    const cartItems = cart.slice();
+    setCart(cartItems.filter((item) => item.id !== product.id));
+  };
+
+  const ProductDetails = ({ product }) => {
+    return (
+      <div className="cartItem_details">
+        <div className="cartItem_container">
+          <img
+            className="cartItem_image"
+            src={product.img}
+            alt={product.description}
+          />
+          <p className="cartItem_description">{product.description}</p>
+          <div className="cartItem_bottom">
+            <p className="cartItem_price">{`${product.count} x ${product.price} $`}</p>
+            <Icon
+              onClick={() => deleteItem(product)}
+              className="cartItem_button"
+              icon={letterX}
+            />
+          </div>
+        </div>
+      </div>
+    );
+  };
+  const totalCost = cart.reduce((a, c) => a + c.price * c.count, 0);
+
+  const handleBuy = () => {
+    setShowPopup(true);
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+    setCart([]);
+  };
+
   return (
     <div className="cart">
       {cart.length > 0 ? (
-        cart
+        cart.map((product, index) => (
+          <ProductDetails key={index} product={product} />
+        ))
       ) : (
-        <h3 className="cart_empty">Twój koszyk jest pusty</h3>
+        <h3 className="cart_empty">Your cart is empty.</h3>
+      )}
+      {cart.length !== 0 && (
+        <>
+          <div className="cart_totalCost">{totalCost} $</div>
+          <button onClick={handleBuy} className="cart_buyButton">
+            Buy Now
+          </button>
+        </>
+      )}
+      {showPopup && (
+        <div className="popup">
+          <div className="popup_inner">
+            <h1>Thank You for shopping!</h1>
+            <h3>Order will be around 2-3 days.</h3>
+            <h5>Total cost: {totalCost} $</h5>
+            <button onClick={closePopup} className="popup_close">
+              Close
+            </button>
+          </div>
+        </div>
       )}
     </div>
   );

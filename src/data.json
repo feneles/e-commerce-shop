@@ -1,197 +1,222 @@
 [
   {
     "sectionPL": "strona główna",
-    "section": "",
+    "section": "home",
     "link": "/"
   },
   {
-    "sectionPL": "sukienki",
     "section": "dresses",
     "link": "/shop/dresses",
     "products": [
       {
-        "description": "Elegancka kiecka",
+        "description": "Pink dress",
         "img": "/img/clothes/dresses 1.jpg",
         "price": 69,
-        "selected": false
+
+        "id": 1
       },
       {
-        "description": "Biały t-shirt basic",
+        "description": "Brown dress",
         "img": "/img/clothes/dresses 2.jpg",
         "price": 59,
-        "selected": false
+
+        "id": 2
       },
       {
-        "description": "Czerwony t-shirt basic",
+        "description": "Floral dress",
         "img": "/img/clothes/dresses 3.jpg",
-        "price": 59,
-        "selected": false
+        "price": 75,
+
+        "id": 3
       },
       {
-        "description": "Różowy t-shirt basic",
+        "description": "Checkered dress",
         "img": "/img/clothes/dresses 4.jpg",
-        "price": 59,
-        "selected": false
+        "price": 80,
+
+        "id": 4
       },
       {
-        "description": "Żółty t-shirt basic",
+        "description": "Night dress",
         "img": "/img/clothes/dresses 5.jpg",
-        "price": 59,
-        "selected": false
+        "price": 65,
+
+        "id": 5
       },
       {
-        "description": "Elegancka kiecka 2",
+        "description": "Orange sport dress",
         "img": "/img/clothes/dresses 6.jpg",
         "price": 69,
-        "selected": false
+
+        "id": 6
       }
     ]
   },
   {
-    "sectionPL": "spódnice",
     "section": "skirts",
     "link": "/shop/skirts",
     "products": [
       {
-        "description": "Biała bluzka kaktus",
-        "img": "",
-        "price": 79,
-        "selected": false
+        "description": "Jeans skirt",
+        "img": "/img/clothes/skirts 1.jpg",
+        "price": 59,
+        "id": 7
       },
       {
-        "description": "Kraciasta koszula autumn",
-        "img": "",
-        "price": 79,
-        "selected": false
+        "description": "Long dark skirt",
+        "img": "/img/clothes/skirts 2.jpg",
+        "price": 75,
+        "id": 8
       },
       {
-        "description": "Biała koszula w paski",
-        "img": "",
-        "price": 79,
-        "selected": false
+        "description": "Light skirt",
+        "img": "/img/clothes/skirts 3.jpg",
+        "price": 89,
+        "id": 9
       },
       {
-        "description": "Bordowa bluzka z wiązaniem",
-        "img": "",
-        "price": 79,
-        "selected": false
+        "description": "Office skirt",
+        "img": "/img/clothes/skirts 4.jpg",
+        "price": 69,
+        "id": 10
       },
       {
-        "description": "Biała bluzka oversize",
-        "img": "",
-        "price": 79,
-        "selected": false
+        "description": "Black mini skirt",
+        "img": "/img/clothes/skirts 5.jpg",
+        "price": 65,
+        "id": 11
+      },
+      {
+        "description": "Jeans mini skirt",
+        "img": "/img/clothes/skirts 6.jpg",
+        "price": 69,
+        "id": 11
       }
     ]
   },
   {
-    "sectionPL": "bluzki",
     "section": "shirts",
     "link": "/shop/shirts",
     "products": [
       {
-        "description": "Biała bluzka kaktus",
-        "img": "",
-        "price": 79,
-        "selected": false
+        "description": "Black shirt",
+        "img": "/img/clothes/shirts 1.jpg",
+        "price": 65,
+        "id": 12
       },
       {
-        "description": "Kraciasta koszula autumn",
-        "img": "",
-        "price": 79,
-        "selected": false
+        "description": "Striped white shirt",
+        "img": "/img/clothes/shirts 2.jpg",
+        "price": 65,
+        "id": 13
       },
       {
-        "description": "Biała koszula w paski",
-        "img": "",
+        "description": "Striped green shirt",
+        "img": "/img/clothes/shirts 3.jpg",
         "price": 79,
-        "selected": false
+        "id": 14
       },
       {
-        "description": "Bordowa bluzka z wiązaniem",
-        "img": "",
+        "description": "Creamy shirt",
+        "img": "/img/clothes/shirts 4.jpg",
         "price": 79,
-        "selected": false
+        "id": 15
       },
       {
-        "description": "Biała bluzka oversize",
-        "img": "",
-        "price": 79,
-        "selected": false
+        "description": "Black night shirt",
+        "img": "/img/clothes/shirts 5.jpg",
+        "price": 75,
+        "id": 16
+      },
+      {
+        "description": "Office shirt",
+        "img": "/img/clothes/shirts 6.jpg",
+        "price": 69,
+        "id": 16
       }
     ]
   },
   {
-    "sectionPL": "spodnie",
     "section": "pants",
     "link": "/shop/pants",
     "products": [
       {
-        "description": "RAJTUZY OJCA ALKOHOLIKA",
-        "img": "",
+        "description": "Black pants",
+        "img": "/img/clothes/pants 1.jpg",
         "price": 79,
-        "selected": false
+        "id": 17
       },
       {
-        "description": "Kraciasta koszula autumn",
-        "img": "",
+        "description": "Blue pants",
+        "img": "/img/clothes/pants 2.jpg",
         "price": 79,
-        "selected": false
+        "id": 18
       },
       {
-        "description": "Biała koszula w paski",
-        "img": "",
-        "price": 79,
-        "selected": false
+        "description": "Red pants",
+        "img": "/img/clothes/pants 3.jpg",
+        "price": 65,
+        "id": 19
       },
       {
-        "description": "Bordowa bluzka z wiązaniem",
-        "img": "",
-        "price": 79,
-        "selected": false
+        "description": "Just pants",
+        "img": "/img/clothes/pants 4.jpg",
+        "price": 69,
+        "id": 20
       },
       {
-        "description": "Biała bluzka oversize",
-        "img": "",
-        "price": 79,
-        "selected": false
+        "description": "Brown pants",
+        "img": "/img/clothes/pants 5.jpg",
+        "price": 70,
+        "id": 21
+      },
+      {
+        "description": "Night pants",
+        "img": "/img/clothes/pants 6.jpg",
+        "price": 75,
+        "id": 21
       }
     ]
   },
   {
-    "sectionPL": "torebki",
     "section": "handbags",
     "link": "/shop/handbags",
     "products": [
       {
-        "description": "Biała bluzka kaktus",
-        "img": "",
-        "price": 79,
-        "selected": false
+        "description": "Small nice handbag",
+        "img": "/img/clothes/handbags 1.jpg",
+        "price": 110,
+        "id": 22
       },
       {
-        "description": "Kraciasta koszula autumn",
-        "img": "",
-        "price": 79,
-        "selected": false
+        "description": "White handbag for you",
+        "img": "/img/clothes/handbags 2.jpg",
+        "price": 125,
+        "id": 23
       },
       {
-        "description": "Biała koszula w paski",
-        "img": "",
-        "price": 79,
-        "selected": false
+        "description": "Big handbag balck edition",
+        "img": "/img/clothes/handbags 3.jpg",
+        "price": 89,
+        "id": 24
       },
       {
-        "description": "Bordowa bluzka z wiązaniem",
-        "img": "",
-        "price": 79,
-        "selected": false
+        "description": "Handbag for shopping",
+        "img": "/img/clothes/handbags 4.jpg",
+        "price": 85,
+        "id": 25
       },
       {
-        "description": "Biała bluzka oversize",
-        "img": "",
-        "price": 79,
-        "selected": false
+        "description": "Handbag for lonely",
+        "img": "/img/clothes/handbags 5.jpg",
+        "price": 95,
+        "id": 26
+      },
+      {
+        "description": "Small black handbag",
+        "img": "/img/clothes/handbags 6.jpg",
+        "price": 90,
+        "id": 26
       }
     ]
   }

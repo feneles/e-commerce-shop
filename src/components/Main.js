@@ -12,8 +12,8 @@ function Main() {
         <img src="/img/banner.png" alt="banner" />
       </div>
       <div className="main_midContent">
-        <h2>DARMOWA DOSTAWA</h2>
-        <p>NA TERENIE POLSKI | 31.08 - 24.12</p>
+        <h2>FREE DELIVERY</h2>
+        <p>ALL OVER UNITED KINGDOM | 31.08 - 24.12</p>
         <div className="main_midPhoto--top">
           <img src="/img/mid_contentTop.png" alt="new collection" />
         </div>
@@ -23,8 +23,8 @@ function Main() {
         </div>
       </div>
       <div className="main_bottomSection">
-        <h4>NOWE KOLEKCJE CO TYDZIEŃ</h4>
-        <p>- u nas zawsze znajdziesz mnóstwo nowości -</p>
+        <h4>NEW COLLECTION EVERY WEEK</h4>
+        <p>- you will always find a lot of news with us -</p>
         <p className="main_phoneNumber">
           <Icon
             icon={phoneHandsetSolid}
@@ -38,7 +38,7 @@ function Main() {
             icon={emailLine}
             style={{ color: "#fff", fontSize: "25px" }}
           />{" "}
-          sklep@hannasfashion.pl
+          shop@hannasfashion.co.uk
         </p>
         <Map />
         <Scroll />

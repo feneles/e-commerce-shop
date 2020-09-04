@@ -8,11 +8,8 @@ import {
 
 function Map() {
   return (
-    <GoogleMap
-      defaultZoom={10}
-      defaultCenter={{ lat: 52.242538, lng: 21.0151 }}
-    >
-      <Marker position={{ lat: 52.242538, lng: 21.0151 }} />
+    <GoogleMap defaultZoom={10} defaultCenter={{ lat: 51.5108, lng: -0.13137 }}>
+      <Marker position={{ lat: 51.5108, lng: -0.13137 }} />
     </GoogleMap>
   );
 }
