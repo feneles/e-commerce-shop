@@ -2,6 +2,7 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import letterX from "@iconify/icons-emojione-monotone/letter-x";
 import { useState } from "react";
+import Button from "@material-ui/core/Button";
 
 function Cart({ cart, setCart }) {
   const [showPopup, setShowPopup] = useState(false);
@@ -54,22 +55,35 @@ function Cart({ cart, setCart }) {
         <h3 className="cart_empty">Your cart is empty.</h3>
       )}
       {cart.length !== 0 && (
-        <>
+        <div className="cart_costAndButton">
           <div className="cart_totalCost">{totalCost} $</div>
-          <button onClick={handleBuy} className="cart_buyButton">
-            Buy Now
-          </button>
-        </>
+
+          <Button
+            onClick={handleBuy}
+            className="cart_buyButton"
+            variant="outlined"
+            color="secondary"
+          >
+            Proceed
+          </Button>
+        </div>
       )}
       {showPopup && (
         <div className="popup">
           <div className="popup_inner">
-            <h1>Thank You for shopping!</h1>
-            <h3>Order will be around 2-3 days.</h3>
-            <h5>Total cost: {totalCost} $</h5>
-            <button onClick={closePopup} className="popup_close">
-              Close
-            </button>
+            <h2 className="popup_inner--message">Thank You for shopping!</h2>
+            <h3 className="popup_inner--message">
+              Order will be around 2-3 days.
+            </h3>
+            <h3 className="popup_inner--message">Total cost: {totalCost} $</h3>
+
+            <div
+              onClick={closePopup}
+              className="popup_close"
+              variant="outlined"
+            >
+              X
+            </div>
           </div>
         </div>
       )}

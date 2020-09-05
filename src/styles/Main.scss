@@ -72,3 +72,151 @@
     transform: translateY(20%);
   }
 }
+
+@media (max-width: 1100px) {
+  .main {
+    &_slidebar img {
+      width: 100%;
+    }
+    &_bottomSection {
+      font-size: 20px;
+    }
+    &_bottomSection h4 {
+      padding-top: 25px;
+      margin-bottom: 15px;
+    }
+    &_bottomSection p:first-of-type::after {
+      top: 25px;
+    }
+    &_phoneNumber {
+      margin-top: 40px;
+    }
+    &_email {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (orientation: portrait) and (max-width: 780px) {
+  .main {
+    &_arrowIcon {
+      bottom: 20px;
+      right: 20px;
+      color: #ff779a;
+      font-size: 35px;
+    }
+    &_midContent {
+      width: 100%;
+    }
+    &_midContent h2 {
+      margin: 15px auto;
+      font-size: 29px;
+    }
+    &_midContent p {
+      margin-bottom: 25px;
+      font-size: 17px;
+    }
+    &_midPhoto--top {
+      width: 100%;
+      & img {
+        width: 100%;
+      }
+    }
+    &_midPhoto--bottom {
+      width: 100%;
+      & img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (orientation: portrait) and (max-width: 420px) {
+  .main {
+    &_bottomSection p {
+      font-size: 18px;
+    }
+    &_midContent p {
+      font-size: 14px;
+    }
+    &_midContent h2 {
+      font-size: 25px;
+    }
+  }
+}
+
+@media (orientation: portrait) and (max-width: 360px) {
+  .main {
+    &_bottomSection p {
+      font-size: 14px;
+    }
+    &_bottomSection h4 {
+      font-size: 16px;
+      padding-top: 20px;
+      margin-bottom: 15px;
+      text-shadow: -2px 5px 4px rgba(0, 0, 0, 0.3);
+    }
+    &_phoneNumber {
+      margin-top: 30px;
+    }
+    &_email {
+      margin-top: 10px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (orientation: landscape) and (max-width: 830px) {
+  .main {
+    &_bottomSection {
+      height: 500px;
+    }
+    &_bottomSection p:first-of-type::after {
+      top: 15px;
+    }
+    &_phoneNumber {
+      margin-top: 25px;
+    }
+    &_email {
+      margin-top: 7px;
+    }
+    &_arrowIcon {
+      bottom: 14px;
+      right: 14px;
+    }
+    &_midContent {
+      width: 100%;
+    }
+    &_midContent h2 {
+      margin: 15px auto;
+      font-size: 29px;
+    }
+    &_midContent p {
+      margin-bottom: 25px;
+      font-size: 17px;
+    }
+    &_midPhoto--top {
+      width: 100%;
+      & img {
+        width: 100%;
+      }
+    }
+    &_midPhoto--bottom {
+      width: 100%;
+      & img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (orientation: landscape) and (max-width: 570px) {
+  .product {
+    &_details {
+      text-align: center;
+    }
+    &_container {
+      margin: 0 auto;
+    }
+  }
+}

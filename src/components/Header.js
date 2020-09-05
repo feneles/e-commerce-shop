@@ -3,9 +3,13 @@ import data from "../data.json";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ isActive, setIsActive }) => {
   const links = data.map((link) => (
-    <li className="navbar_button" key={link.section}>
+    <li
+      onClick={() => setIsActive(false)}
+      className="navbar_button"
+      key={link.section}
+    >
       <Link className="button_link" to={link.link}>
         {link.section}
       </Link>
@@ -17,8 +21,21 @@ const Header = () => {
       <div className="header_logo">
         <img src="/img/logo.png" alt="logo" />
       </div>
+      <div className="header_underline"></div>
+      <button
+        onClick={() => setIsActive(!isActive)}
+        className={isActive ? "hamburger hamburger_active" : "hamburger"}
+      >
+        <span className="hamburger_box">
+          <span className="hamburger_inner"></span>
+        </span>
+      </button>
+      <div
+        className={isActive ? "navbar_container active" : "navbar_container"}
+      >
+        <ul className="navbar">{links}</ul>
+      </div>
 
-      <ul className="navbar">{links}</ul>
       <Link to="/cart" className="header_cartIcon">
         <ShoppingCartIcon fontSize="large" />
       </Link>

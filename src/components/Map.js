@@ -17,14 +17,8 @@ function Map() {
 const WrappedMap = withScriptjs(withGoogleMap(Map));
 
 export default function App() {
-  const style = {
-    width: "40%",
-    height: "40vh",
-    margin: "30px auto",
-    border: "2px solid white",
-  };
   return (
-    <div style={style}>
+    <div className="map_container">
       <WrappedMap
         googleMapURL={
           "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyD7VRnojeVMloiD6fgT0nkWAnrdbwqahBE"

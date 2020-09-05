@@ -1,7 +1,6 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import facebookRect from "@iconify/icons-websymbol/facebook-rect";
-
 import instagramIcon from "@iconify/icons-brandico/instagram";
 
 function Footer() {

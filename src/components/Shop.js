@@ -48,7 +48,7 @@ function Shop(props) {
             <Button
               type="button"
               className="product_button"
-              variant="contained"
+              variant="outlined"
               color="secondary"
               onClick={() => handleButton(product)}
             >

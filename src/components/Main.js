@@ -8,7 +8,7 @@ import emailLine from "@iconify/icons-clarity/email-line";
 function Main() {
   return (
     <div className="main">
-      <div className="main_slidebar img-fluid">
+      <div className="main_slidebar">
         <img src="/img/banner.png" alt="banner" />
       </div>
       <div className="main_midContent">

@@ -5,11 +5,12 @@ import Routes from "./routing/routes";
 import "./App.scss";
 
 function App() {
+  const [isActive, setIsActive] = useState(false);
   const [cart, setCart] = useState([]);
 
   return (
-    <div className="app">
-      <Header />
+    <div className={isActive ? "app app_active" : "app"}>
+      <Header isActive={isActive} setIsActive={setIsActive} />
       <Routes cart={cart} setCart={setCart} />
       <Footer />
     </div>
