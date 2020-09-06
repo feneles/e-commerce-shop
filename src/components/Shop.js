@@ -50,7 +50,10 @@ function Shop(props) {
               className="product_button"
               variant="outlined"
               color="secondary"
-              onClick={() => handleButton(product)}
+              onClick={(e) => {
+                e.preventDefault();
+                handleButton(product);
+              }}
             >
               Add To Cart
             </Button>

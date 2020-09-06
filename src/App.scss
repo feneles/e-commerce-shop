@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
 
-@import "./styles/Header.scss";
-@import "./styles/Main.scss";
-@import "./styles/Footer.scss";
-@import "./styles/Shop.scss";
-@import "./styles/Map.scss";
-@import "./styles/Cart.scss";
+@import "./styles/Header";
+@import "./styles/Main";
+@import "./styles/Footer";
+@import "./styles/Shop";
+@import "./styles/Map";
+@import "./styles/Cart";
 
 * {
   margin: 0;
@@ -20,4 +20,28 @@
 .app.app_active {
   height: 100vh;
   overflow: hidden;
+}
+
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+  transform: translateY(-10px);
+}
+
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms linear 150ms, transform 300ms ease-out 150ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 150ms linear, transform 150ms ease-in;
 }
