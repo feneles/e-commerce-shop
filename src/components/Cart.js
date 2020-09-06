@@ -62,7 +62,6 @@ function Cart({ cart, setCart }) {
             onClick={handleBuy}
             className="cart_buyButton"
             variant="outlined"
-            color="secondary"
           >
             Proceed
           </Button>

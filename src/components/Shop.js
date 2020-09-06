@@ -49,7 +49,6 @@ function Shop(props) {
               type="button"
               className="product_button"
               variant="outlined"
-              color="secondary"
               onClick={(e) => {
                 e.preventDefault();
                 handleButton(product);
