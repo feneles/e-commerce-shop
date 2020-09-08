@@ -1,26 +1,15 @@
 .footer {
   background-color: #141414;
-  text-align: center;
-  height: 25vh;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 20vh;
 
-  &_logo {
-    transform: translateX(-1%);
-  }
-
-  &_address {
-    font-size: 20px;
-    transform: translateY(-220%);
-  }
-  &_copyrights {
-    display: block;
-    font-size: 12px;
-  }
   &_icons {
-    display: flex;
-    justify-content: center;
-    transform: translateY(-100%);
+    margin-bottom: 10px;
   }
+
   &_instaIcon {
     margin-left: 25px;
     &:hover {
@@ -30,44 +19,18 @@
   &_fbIcon:hover {
     cursor: pointer;
   }
-}
-
-@media (max-width: 1100px) {
-  .footer {
-    height: 230px;
+  &_copyrights {
+    font-size: 12px;
   }
 }
 
-@media (orientation: portrait) and (max-width: 420px) {
+@media (orientation: portrait) and (max-width: 550px) {
   .footer {
     &_address {
       font-size: 15px;
-      transform: translateY(-260%);
-    }
-  }
-}
-
-@media (orientation: portrait) and (max-width: 360px) {
-  .footer {
-    &_address {
-      font-size: 12px;
-      transform: translateY(-280%);
-    }
-    &_logo {
-      width: 70%;
-      margin: 0 auto;
-    }
-    &_logo img {
-      margin-top: 5px;
-      width: 100%;
-      height: 100%;
     }
     &_copyrights {
       font-size: 9px;
-      transform: translateY(150%);
-    }
-    &_icons {
-      transform: translateY(-60%);
     }
   }
 }

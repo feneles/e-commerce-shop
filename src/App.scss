@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 @import "./styles/Header";
 @import "./styles/Main";
-@import "./styles/Footer";
-@import "./styles/Shop";
 @import "./styles/Map";
+@import "./styles/Footer";
 @import "./styles/Cart";
 
 * {
@@ -14,12 +14,15 @@
 }
 
 .app {
-  margin: 0 auto;
   font-family: "Montserrat", sans-serif;
 }
+
 .app.app_active {
   height: 100vh;
   overflow: hidden;
+}
+.app.container {
+  max-width: 100%;
 }
 
 .fade-appear,

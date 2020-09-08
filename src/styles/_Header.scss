@@ -1,10 +1,6 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
 .header {
-  &_logo {
-    display: flex;
-    margin: 20px auto;
-    width: 25%;
-    height: 22vh;
-  }
   &_cartIcon {
     position: absolute;
     top: 10px;
@@ -12,15 +8,13 @@
     font-size: 35px;
     color: black;
   }
-  &_logo img {
-    height: 100%;
-    width: 100%;
-  }
 }
 
-.navbar {
+.nav_bar {
   display: flex;
+  width: 100%;
   justify-content: center;
+  margin: 20px auto;
   &_button {
     display: block;
     font-family: "Montserrat", sans-serif;
@@ -31,9 +25,15 @@
     color: black;
     text-decoration: none;
   }
-
+  .button_link {
+    text-decoration: none;
+    color: black;
+  }
   &_button:hover {
     transform: translateY(-7%);
+  }
+  &_container {
+    width: 100%;
   }
 }
 
@@ -53,10 +53,6 @@
   border: none;
   margin: 0;
   z-index: 10001;
-
-  &:focus {
-    outline: 0;
-  }
 
   &_box {
     width: 40px;
@@ -110,7 +106,7 @@
     transform: translateY(-1000%);
   }
 
-  .navbar {
+  .nav_bar {
     height: 90%;
     width: 50%;
     flex-direction: column;
@@ -128,10 +124,8 @@
     display: inline-block;
     transition: transform 0.3s 0.1s ease-in-out;
   }
-  .hamburger_active {
-    transform: translateX(500px);
-  }
-  .navbar_container {
+
+  .nav_bar_container {
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -142,29 +136,13 @@
     transform: translateX(-110vw);
     transition: transform 0.3s 0.1s ease-in-out;
   }
-  .navbar_container.active {
+  .nav_bar_container.active {
     transform: translateX(0px);
   }
 }
 
-@media (orientation: portrait) {
-  .header {
-    &_logo {
-      width: 50%;
-    }
-  }
-}
-
-@media (orientation: portrait) and (max-width: 420px) {
-  .hamburger_active {
-    transform: translateX(56vw);
-  }
-}
 @media (orientation: portrait) and (max-width: 360px) {
-  .hamburger_active {
-    transform: translateX(53vw);
-  }
-  .navbar {
+  .nav_bar {
     &_button {
       font-size: 20px;
       padding: 3px 0;
@@ -172,10 +150,7 @@
   }
 }
 @media (orientation: landscape) and (max-width: 750px) {
-  .hamburger_active {
-    transform: translateX(475px);
-  }
-  .navbar {
+  .nav_bar {
     &_button {
       font-size: 20px;
       margin: 2px;
@@ -183,17 +158,8 @@
   }
 }
 
-@media (orientation: landscape) and (max-width: 670px) {
-  .hamburger_active {
-    transform: translateX(410px);
-  }
-}
-
 @media (orientation: landscape) and (max-width: 570px) {
-  .hamburger_active {
-    transform: translateX(355px);
-  }
-  .navbar_button {
+  .nav_bar_button {
     padding: 8px;
   }
 }

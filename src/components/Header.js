@@ -7,7 +7,7 @@ const Header = ({ isActive, setIsActive }) => {
   const links = data.map((link) => (
     <li
       onClick={() => setIsActive(false)}
-      className="navbar_button"
+      className="nav_bar_button"
       key={link.section}
     >
       <Link className="button_link" to={link.link}>
@@ -17,10 +17,17 @@ const Header = ({ isActive, setIsActive }) => {
   ));
 
   return (
-    <header className="header">
-      <div className="header_logo">
-        <img src="/img/logo.png" alt="logo" />
+    <header className="row">
+      <div className="col-md-12">
+        <Link to="/">
+          <img
+            className="img-fluid rounded mx-auto mt-5 d-block"
+            src="/img/logo.png"
+            alt="logo"
+          />
+        </Link>
       </div>
+      <div className="w-100"></div>
       <div className="header_underline"></div>
       <button
         onClick={() => setIsActive(!isActive)}
@@ -31,9 +38,9 @@ const Header = ({ isActive, setIsActive }) => {
         </span>
       </button>
       <div
-        className={isActive ? "navbar_container active" : "navbar_container"}
+        className={isActive ? "nav_bar_container active" : "nav_bar_container"}
       >
-        <ul className="navbar">{links}</ul>
+        <ul className="nav_bar">{links}</ul>
       </div>
 
       <Link to="/cart" className="header_cartIcon">

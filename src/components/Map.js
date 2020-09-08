@@ -18,7 +18,7 @@ const WrappedMap = withScriptjs(withGoogleMap(Map));
 
 export default function App() {
   return (
-    <div className="map_container">
+    <div className="map_container col-10 offset-md-1 col-md-8 offset-md-2">
       <WrappedMap
         googleMapURL={
           "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyD7VRnojeVMloiD6fgT0nkWAnrdbwqahBE"

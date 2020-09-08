@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import data from "../data.json";
 import Button from "@material-ui/core/Button";
-import loadingIcon from "@iconify/icons-codicon/loading";
-import { Icon } from "@iconify/react";
 
 function Shop(props) {
   const [products, setProducts] = useState([]);
@@ -40,19 +38,22 @@ function Shop(props) {
 
   const ProductDetails = ({ product }) => {
     return (
-      <div className="product_details">
-        <div className="product_container">
-          <img
-            className="product_image"
-            src={product.img}
-            alt={product.description}
-          />
-          <p className="product_description">{product.description}</p>
-          <div className="product_bottom">
-            <p className="product_price">{`${product.price} $`}</p>
+      <div className="col-md-6 col-lg-4">
+        <img
+          className="img-fluid mx-auto h-75 w-100"
+          src={product.img}
+          alt={product.description}
+        />
+
+        <div className="d-flex justify-content-between p-3">
+          <div className="details d-flex flex-column">
+            <p>{product.description}</p>
+            <p>{`${product.price} $`}</p>
+          </div>
+          <div>
+            {" "}
             <Button
               type="button"
-              className="product_button"
               variant="outlined"
               onClick={(e) => {
                 e.preventDefault();
@@ -68,14 +69,9 @@ function Shop(props) {
   };
 
   return (
-    <div className="shop">
+    <div className="row">
       {isLoading ? (
-        <div className="loading">
-          <Icon
-            icon={loadingIcon}
-            style={{ color: "#666", fontSize: "70px" }}
-          />
-        </div>
+        <h3 className="loading">Loading...</h3>
       ) : (
         products.length > 0 &&
         products.map((product, index) => (

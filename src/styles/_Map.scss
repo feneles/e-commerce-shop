@@ -3,21 +3,8 @@
   height: 100%;
   margin: 20px auto;
   &_container {
-    width: 40%;
+    width: 60%;
     height: 40vh;
     margin: 30px auto;
-    border: 2px solid white;
-  }
-}
-
-@media (max-width: 1100px) {
-  .map_container {
-    width: 80%;
-  }
-}
-
-@media (orientation: landscape) and (max-width: 830px) {
-  .map_container {
-    height: 65vh;
   }
 }

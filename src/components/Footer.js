@@ -5,10 +5,8 @@ import instagramIcon from "@iconify/icons-brandico/instagram";
 
 function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer_logo">
-        <img src="/img/logo_footer.png" alt="footer logo" />
-      </div>
+    <footer className="row footer">
+      <h2>Hanna's Fashion</h2>
       <p className="footer_address">
         10 Wardour St, London W1D 6BZ, United Kingdom
       </p>
