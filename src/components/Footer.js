@@ -7,9 +7,7 @@ function Footer() {
   return (
     <footer className="row footer">
       <h2>Hanna's Fashion</h2>
-      <p className="footer_address">
-        10 Wardour St, London W1D 6BZ, United Kingdom
-      </p>
+      <p className="footer_address">10 Wardour St, London W1D 6BZ</p>
       <div className="footer_icons">
         <Icon
           className="footer_fbIcon"
