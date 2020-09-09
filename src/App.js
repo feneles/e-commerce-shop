@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className={isActive ? "app app_active" : "app"}>
-      <Header isActive={isActive} setIsActive={setIsActive} />
+      <Header isActive={isActive} setIsActive={setIsActive} cart={cart} />
       <Routes cart={cart} setCart={setCart} />
       <Footer />
     </div>

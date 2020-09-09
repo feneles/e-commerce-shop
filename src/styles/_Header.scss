@@ -7,6 +7,12 @@
     right: 20px;
     font-size: 35px;
     color: black;
+    transition: 0.3s;
+    &:hover {
+      color: black;
+      text-decoration: none;
+      transform: translateY(7%);
+    }
   }
 }
 

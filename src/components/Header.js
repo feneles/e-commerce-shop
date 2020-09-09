@@ -3,7 +3,7 @@ import data from "../data.json";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { Link } from "react-router-dom";
 
-const Header = ({ isActive, setIsActive }) => {
+const Header = ({ isActive, setIsActive, cart }) => {
   const links = data.map((link) => (
     <li
       onClick={() => setIsActive(false)}
@@ -15,6 +15,8 @@ const Header = ({ isActive, setIsActive }) => {
       </Link>
     </li>
   ));
+
+  const HowManyItemsInCart = cart.reduce((a, c) => a + c.count, 0);
 
   return (
     <header className="row">
@@ -44,6 +46,7 @@ const Header = ({ isActive, setIsActive }) => {
       </div>
 
       <Link to="/cart" className="header_cartIcon">
+        ({cart.length > 0 ? HowManyItemsInCart : 0})
         <ShoppingCartIcon fontSize="large" />
       </Link>
     </header>
