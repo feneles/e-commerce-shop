@@ -161,6 +161,10 @@
       font-size: 15px;
     }
   }
+  .popup_inner {
+    left: 5%;
+    right: 5%;
+  }
 }
 
 @media (orientation: portrait) and (max-width: 360px) {
@@ -205,6 +209,7 @@
       padding: 5px;
     }
   }
+
   .popup_inner--message {
     font-size: 20px;
     margin: 25px;

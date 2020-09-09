@@ -12,42 +12,36 @@
         "description": "Pink dress",
         "img": "/img/clothes/dresses 1.jpg",
         "price": 69,
-
         "id": 1
       },
       {
         "description": "Brown dress",
         "img": "/img/clothes/dresses 2.jpg",
         "price": 59,
-
         "id": 2
       },
       {
         "description": "Floral dress",
         "img": "/img/clothes/dresses 3.jpg",
         "price": 75,
-
         "id": 3
       },
       {
         "description": "Checkered dress",
         "img": "/img/clothes/dresses 4.jpg",
         "price": 80,
-
         "id": 4
       },
       {
         "description": "Night dress",
         "img": "/img/clothes/dresses 5.jpg",
         "price": 65,
-
         "id": 5
       },
       {
         "description": "Orange sport dress",
         "img": "/img/clothes/dresses 6.jpg",
         "price": 69,
-
         "id": 6
       }
     ]

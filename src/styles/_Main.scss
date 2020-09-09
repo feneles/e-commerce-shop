@@ -16,12 +16,12 @@
   }
 
   &_bottomSection p {
-    @extend .d-block;
+    display: block;
     text-shadow: -2px 5px 4px rgba(0, 0, 0, 0.3);
   }
   &_bottomSection p:first-of-type::after {
     content: "";
-    @extend .d-block;
+    display: block;
     height: 2px;
     background-color: rgb(255, 255, 255);
     position: relative;
@@ -44,7 +44,7 @@
     z-index: 100;
   }
   &_email {
-    @extend .d-block;
+    display: block;
     margin-top: 30px;
     margin-bottom: 35px;
   }

@@ -45,7 +45,7 @@ function Main() {
         </p>
         <p className="main_email">
           <Icon
-            className="main_emailIcon"
+            className="main_emailIcon mb-3"
             icon={emailLine}
             style={{ color: "#fff", fontSize: "25px" }}
           />{" "}
