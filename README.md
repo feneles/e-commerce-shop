@@ -1,3 +1,11 @@
+<strong>It's a simple online shop template. This project uses React.js, React-Router for navigation, React-Transition-Group for animated route changes. I have also used Figma to create some layouts.</strong>
+
+
+Live demo: https://e-commerce-store-1fa53.web.app/
+
+________________________________________________________________
+________________________________________________________________
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
